@@ -27,7 +27,7 @@ function App() {
 
   return (
     <div>
-      <h1>Welcome to Todoloo!</h1>
+      <h1>Welcome to Shinto!</h1>
       <ul>
         {todos.map((todo) => (
           <li key={todo.id}>{todo.text}</li>
