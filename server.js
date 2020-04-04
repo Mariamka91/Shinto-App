@@ -20,6 +20,7 @@ app.use(auth.handleErrors);
 db.sequelize.sync();
 app.listen(process.env.PORT || 8080, () => {
   console.log(
-    `[START] app running on http://localhost:${process.env.PORT || 8080}`
+    `[START] this app running on http://localhost:${process.env.PORT || 8080}`
+    
   );
 });
