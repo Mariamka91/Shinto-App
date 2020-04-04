@@ -1,24 +1,24 @@
 {
   "development": {
     "username": "root",
-    "password": null,
-    "database": "todoloo_dev_db",
+    "password": "qwerty212342467",
+    "database": "shinto_db",
     "host": "127.0.0.1",
     "dialect": "mysql",
     "operatorsAliases": false
   },
   "test": {
     "username": "root",
-    "password": null,
-    "database": "todoloo_test_db",
+    "password": "qwerty212342467",
+    "database": "shinto_test_db",
     "host": "127.0.0.1",
     "dialect": "mysql",
     "operatorsAliases": false
   },
   "production": {
     "username": "root",
-    "password": null,
-    "database": "todoloo_prod_db",
+    "password": "qwerty212342467",
+    "database": "shinto_prod_db",
     "host": "127.0.0.1",
     "dialect": "mysql",
     "operatorsAliases": false
