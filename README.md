@@ -1,2 +1,3 @@
-# Shinto-App
-Project #3
+# todoloo
+
+A team based todo app for crushing task lists
