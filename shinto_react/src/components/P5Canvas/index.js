@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import p5 from 'p5';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 class P5Canvas extends Component {
@@ -22,6 +24,7 @@ class P5Canvas extends Component {
             this.clear = p.createButton("clear");
             this.clear.mousePressed(() => p.background(0))
             this.can.drop(p.gotFile)
+            this.save = p.createButton("save");
         }
 
 
