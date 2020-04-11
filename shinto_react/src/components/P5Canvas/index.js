@@ -8,6 +8,7 @@ class P5Canvas extends Component {
 
         super(props);
         this.canvasRef = React.createRef();
+        this.state = {x: 0, y: 0}
     }
 
 
@@ -34,7 +35,12 @@ class P5Canvas extends Component {
 
             if (p.newImage){
 
-                p.image(p.newImage, 0, 0, p.width * .2, p.height *.2);
+                p.image(
+                    p.newImage,
+                    this.state.x - this.canvasRef.current.getBoundingClientRect().left,
+                    this.state.y - this.canvasRef.current.getBoundingClientRect().top,
+                    p.width * 0.2,
+                    p.height * 0.2);
             }
         }
 
@@ -66,6 +72,10 @@ class P5Canvas extends Component {
     componentDidMount() {
         this.myP5 = new p5(this.sketch, this.canvasRef.current)
         this.testX = 5555;
+        this.canvasRef.current.addEventListener("mouseleave", evt =>
+        this.setState({ x: evt.x , y: evt.y })
+      );
+        
     }
 
     // We can call our own function in our p5 code through our instance P5 'myP5'
@@ -77,11 +87,20 @@ class P5Canvas extends Component {
     // after 'componentDidMount' and does not exist at the time of first render when it is bound
     // to the buttons onClick.
 
-    render() {
+
+        render() {
+            if (this.canvasRef.current) {
+              console.log(
+                this.state.x - this.canvasRef.current.getBoundingClientRect().left,
+                this.state.y - this.canvasRef.current.getBoundingClientRect().top
+              );
+              console.log(this.state.x, this.state.y);
+
+            }
 
         return (
             <>
-                <div ref={this.canvasRef} style={{ marginTop: "50px" }}>
+                <div ref={this.canvasRef} style={{ margin: "50px", width: "500px", height: "500px" }}>
                 </div>
             </>
         )
