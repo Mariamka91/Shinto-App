@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import p5 from "p5";
-import "bootstrap/dist/css/bootstrap.min.css";
+import React, {Component } from 'react';
+import p5 from 'p5';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class P5Canvas extends Component {
   constructor(props) {
@@ -35,6 +35,7 @@ class P5Canvas extends Component {
           this.y - p.newImage.height * 0.2,
           p.newImage.width * 0.5,
           p.newImage.height * 0.5
+          
         );
       }
     };
@@ -73,7 +74,7 @@ class P5Canvas extends Component {
   render() {
     return (
       <>
-        <div ref={this.canvasRef} style={{ marginTop: "50px" }}></div>
+        <div ref={this.canvasRef} style={{marginTop: "90px", marginBottom: "90px", marginLeft: "290px" }}></div>
       </>
     );
   }
