@@ -1,13 +1,11 @@
 import React from 'react';
-import Canvas from './components/P5Canvas'
+import AuthProvider, {useAuth} from './contexts/auth.context.js';
+import AuthenticatedApp from './AuthenticatedApp';
+import UnauthenticatedApp from './UnauthenticatedApp';
 
-
-function App() {
-  return (
-    <div className="App">
-      <Canvas />
-    </div>
-  );
+function App (){
+  const {user}= useAuth();
+  return user ? <AuthenticatedApp/> : <UnauthenticatedApp/>;
 }
 
 export default App;

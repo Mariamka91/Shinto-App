@@ -1,7 +1,8 @@
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
+const config = require('dotenv').config();
 
-('use strict');
+('use strict')
 module.exports = (sequelize, DataTypes) => {
   const User = sequelize.define(
     'User',
@@ -43,8 +44,9 @@ module.exports = (sequelize, DataTypes) => {
     User.belongsToMany(models.List, { as: 'lists', through: 'list_members' });
   };
 
-  User.prototype.checkPassword = function(password) {
-    return bcrypt.compare(password, this.password);
+  User.prototype.checkPassword = async function(password) {
+    const hashedPassword= await bcrypt.hash(password,10);
+    return this.password === hashedPassword
   };
 
   User.prototype.generateToken = function() {
