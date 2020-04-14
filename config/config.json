@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "12086Appl",
+    "password": "qwerty212342467",
     "database": "shinto_db",
     "host": "127.0.0.1",
     "dialect": "mysql",
@@ -9,7 +9,7 @@
   },
   "test": {
     "username": "root",
-    "password": "12086Appl",
+    "password": "qwerty212342467",
     "database": "shinto_test_db",
     "host": "127.0.0.1",
     "dialect": "mysql",
@@ -17,7 +17,7 @@
   },
   "production": {
     "username": "root",
-    "password": "12086Appl",
+    "password": "qwerty212342467",
     "database": "shinto_prod_db",
     "host": "127.0.0.1",
     "dialect": "mysql",
