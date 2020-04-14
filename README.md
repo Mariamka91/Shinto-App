@@ -1,4 +1,3 @@
 # KAMVAS 
 ## A place for inspiration and freedom 
-
-![small]
+![](shinto_react/src/components/images/logo.jpg)
