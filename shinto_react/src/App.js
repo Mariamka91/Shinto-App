@@ -1,15 +1,11 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from './components/Navbar';
-import P5Canvas from './components/P5Canvas/index';
+import AuthProvider, {useAuth} from './contexts/auth.context.js';
+import AuthenticatedApp from './AuthenticatedApp';
+import UnauthenticatedApp from './UnauthenticatedApp';
 
-function App() {
-  return (
-    <div>
-  <Navbar/>
-  <P5Canvas/>
-    </div>
-  );
+function App (){
+  const {user}= useAuth();
+  return user ? <AuthenticatedApp/> : <UnauthenticatedApp/>;
 }
 
 export default App;
