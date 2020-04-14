@@ -1,5 +1,5 @@
 {
-  "name": "todoloo",
+  "name": "KANVAS",
   "version": "1.0.0",
   "description": "An shared todo app from crushing team task lists",
   "main": "server.js",
@@ -8,10 +8,10 @@
     "start:prod": "node server.js",
     "start:dev": "concurrently \"npm run server\" \"npm run client\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "client": "cd client && npm run start",
+    "client": "cd shinto_react && npm run start",
     "server": "./node_modules/.bin/nodemon --ignore 'client/*' server.js",
-    "install": "cd client && npm install",
-    "build": "cd client && npm run build",
+    "install": "cd shinto_react && npm install",
+    "build": "cd shinto_react && npm run build",
     "heroku-postbuild": "npm run build"
   },
   "repository": {
