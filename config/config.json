@@ -2,11 +2,7 @@
   "development": {
     "username": "root",
     "password": "qwerty212342467",
-<<<<<<< HEAD
     "database": "shinto_db",
-=======
-    "database": "tester_db",
->>>>>>> 3bdf56e8bc9a44da66b5e756db6ad2a9189f30c8
     "host": "127.0.0.1",
     "dialect": "mysql",
     "operatorsAliases": false
@@ -14,11 +10,7 @@
   "test": {
     "username": "root",
     "password": "qwerty212342467",
-<<<<<<< HEAD
     "database": "shinto_test_db",
-=======
-    "database": "todoloo_test_db",
->>>>>>> 3bdf56e8bc9a44da66b5e756db6ad2a9189f30c8
     "host": "127.0.0.1",
     "dialect": "mysql",
     "operatorsAliases": false
@@ -26,11 +18,7 @@
   "production": {
     "username": "root",
     "password": "qwerty212342467",
-<<<<<<< HEAD
     "database": "shinto_prod_db",
-=======
-    "database": "todoloo_prod_db",
->>>>>>> 3bdf56e8bc9a44da66b5e756db6ad2a9189f30c8
     "host": "127.0.0.1",
     "dialect": "mysql",
     "operatorsAliases": false
