@@ -9,7 +9,7 @@
     "start:dev": "concurrently \"npm run server\" \"npm run shinto_react\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "client": "cd shinto_react && npm run start",
-    "server": "./node_modules/.bin/nodemon --ignore 'shinto_react/*' server.js",
+    "server": "nodemon --ignore 'shinto_react/*' server.js",
     "install": "cd shinto_react && npm install",
     "build": "cd shinto_react && npm run build",
     "heroku-postbuild": "npm run build"
@@ -39,5 +39,6 @@
     "nodemon": "^2.0.2",
     "sequelize": "^5.21.6",
     "sequelize-cli": "^5.5.1"
-  }
+  },
+  "devDependencies": {}
 }
